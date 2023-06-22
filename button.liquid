@@ -1,0 +1,19 @@
+<div class="additional-add-to-cart">
+
+  <div class="add-to-cart-2x">
+    <form method="post" action="/cart/add">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+      <input style="display: none" min="2" type="number" id="quantity" name="quantity" value="2"/>
+      <input type="submit" value="Add too cart 2X" class="btn btn__add-to-cart" />
+    </form>
+  </div>
+  
+  <div class="add-to-cart-3x">
+    <form method="post" action="/cart/add">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+      <input style="display: none" min="3" type="number" id="quantity" name="quantity" value="3"/>
+      <input type="submit" value="Add to cart 3X" class="btn btn__add-to-cart" />
+    </form>
+  </div>
+
+</div>
